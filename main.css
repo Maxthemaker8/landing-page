@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) 
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+   /* adding rule for links */
+   text-decoration: none;
+   /*done rules for links*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of Meyer CSS Reset*/
+
+
+
+body{
+   font-family: "Roboto", sans-serif;
+   background-color: #1F2937;
+}
+
+h1{
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+h2{
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+h3{
+   font-size: 1.3rem;
+   font-weight: 700;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+padding: 2% 20%;
+background-color: #1F2937;
+color: white;
+}
+
+#logo{
+   font-size: 24px;
+   font-weight: 800;
+}
+
+#navLinks ul li {
+   display: inline;
+   padding-right: 1rem;
+   font-size: 18px;
+}
+
+#navLinks ul li:nth-child(3){
+   padding-right: 0;
+}
+
+#navLinks ul li a{
+   color: white;
+}
+
+header{
+   padding: 5% 20%;
+   display: flex;
+   justify-content: space-between;
+   background-color: #1F2937;
+   color: white;
+   gap: 4rem;
+}
+#leftHeader{
+   flex: 1 1 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /*align-items: center;*/
+   align-items: flex-start;
+}
+
+
+.btn{
+   background-color: #3882F6;
+   border-radius: .25rem;
+   color: white;
+   border: 0;
+   cursor: pointer;
+   font-size: 16px;
+   padding: .5rem 1rem;
+   margin-top: 1rem;
+   
+
+}
+
+#rightHeader{
+   flex: 1 1 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  /* margin-left: 1rem; GOING TO USE FLEX GAP INSTEAD */
+}
+
+#rightHeader img{
+   width: 100%;
+   height: auto;
+}
+
+.some-random-information{
+   padding: 2% 10%;
+   background-color: white;
+   margin: 0 10%;
+}
+#random-header{
+   text-align: center;
+   margin-bottom: 2%;
+}
+
+.boxes{
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   gap: 7rem;
+}
+
+.box{
+   height: 10rem;
+   width: 10rem;
+   border-radius: .5rem;
+   border: solid 2px #3882F6;
+   
+}
+
+.box-captions{
+   display: flex;
+   
+   
+   justify-content: center;
+   align-items: center;
+   gap: 7rem;
+}
+
+.box-caption{
+   width: 10rem;
+   height: auto;
+   margin-top:.5rem;
+}
+
+.quote-section{
+   padding: 6% 15%;
+   background-color: lightgray;
+   margin: 0 10%;
+}
+
+blockquote{
+   font-style: italic;
+   font-size: 2rem;
+   font-weight: 100;
+}
+
+cite{
+   font-weight: bold;
+   font-size: 1.2rem;
+   float: right; 
+}
+
+.call-to-action{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 10%;
+   padding: 6% 15%;
+}
+
+.blue-call-to-action{
+   background-color: #3882F6;
+   border-radius: .5rem;
+   width: 100vw;
+   height: auto;
+   padding: 3% 10%;
+   /*margin: 5% 10%;*/
+   display: flex;
+   justify-content: center;
+   gap: 3rem;
+   align-items: center;
+   color: white;
+}
+
+.blue-call-to-action p{
+   font-weight: 400;
+   opacity: 80%;
+}
+
+.blue-call-to-action button{
+   border: solid white 1px;
+}
+
+.call-to-action-text{
+   display: flex;
+   flex-direction: column;
+}
+
+footer{
+   color: white;
+   background-color: #1F2937;
+   text-align: center;
+   padding: 2% 10%;
+}
